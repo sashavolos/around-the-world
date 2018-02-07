@@ -1,10 +1,17 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #8FBC8F;
+  background-color: white;
   background-repeat: no-repeat;
 }
+#score {
+  height: 5vh;
+  width: 15vw;
+  background-color: #00BFFF;
+  position: center;
+  margin: 30px 800px;
 
+}
 #img {
   background-image: url('./assets/world-map.png');
   height: 80%;
@@ -19,44 +26,118 @@ h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 90px;
   text-align: center;
-  background-color: #8FBC8F;
+  background-color: #00BFFF;
+}
+
+a {
+  color: #00BFFF;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 625px;
+  padding-right: 30px;
+}
+
+a:hover {
+  color: black;
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 50px;
   text-align: center;
-  background-color: #8FBC8190F;
+  background-color: white;
 }
 
-#america {
+#play {
 font-family: 'Julius Sans One', sans-serif;
 font-style: bold 100;
-font-size: 20px;
-color: green;
-background-color: black;
-height: 50px;
-width: 190px;
-margin: 250px 330px;
+font-size: 100px;
+color: #00BFFF;
+background-color: white;
+height: 200px;
+width: 390px;
+margin: 300px 500px;
 }
-
-#south {
-  font-family: 'Julius Sans One', sans-serif;
-  font-style: bold 100;
-  font-size: 20px;
-  color: green;
+#play:hover {
+  color: #00BFFF;
   background-color: black;
-  height: 50px;
-  width: 210px;
-  margin: 30px 540px;
 }
 
 #questionBox{
-  height: 50vh;
+  height: 50;
   width: 50vw;
-  border: 1px solid black;
+  border: 7px solid black;
+  background-color: #00BFFF;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -50px;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  padding-left: 15px;
+  font-style: bold;
+  font-family: 'Comfortaa', cursive;
+}
+#close {
+    float:right;
+    display:inline-block;
+    padding:1px 8px;
+    background:#ccc;
+}
+
+#next {
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  margin-bottom: 45px;
   background-color: white;
-  position: fixed;
-  top: 25%;
-  left: 25%;
+  color: black;
+  height: 30px;
+  width: 60px;
+  margin-bottom:20px;
+}
+#submit {
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  font-style: bold;
+  margin-bottom: 45px;
+  background-color: white;
+  color: black;
+  height: 44px;
+  width: 65px;
+}
+
+#instructions {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  font-size: 40px;
+
+}
+.planePath {
+  stroke: #D9DADA;
+  stroke-width: .1%;
+  stroke-width: .5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.fil1 {
+  fill: #D9DADA;
+}
+
+.fil2 {
+  fill: #C5C6C6;
+}
+
+.fil4 {
+  fill: #9D9E9E;
+}
+
+.fil3 {
+  fill: #AEAFB0;
 }
