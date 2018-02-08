@@ -10,8 +10,20 @@ html, body {
   background-color: #00BFFF;
   position: center;
   margin: 30px 800px;
+}
+
+#x {
+  background-image: url('./assets/x.jpg');
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: -1950px;
+  margin-left: -280px;
 
 }
+
 #img {
   background-image: url('./assets/world-map.png');
   height: 80%;
@@ -70,10 +82,10 @@ margin: 300px 500px;
 #questionBox{
   height: 50;
   width: 50vw;
-  border: 7px solid black;
-  background-color: #00BFFF;
+  border: 7px solid #00BFFF;
+  background-color: white;
   position: absolute;
-  margin-top: -80px;
+  margin-top: -20px;
   margin-left: -50px;
   top: 50%;
   left: 50%;
@@ -140,4 +152,7 @@ margin: 300px 500px;
 
 .fil3 {
   fill: #AEAFB0;
+}
+input[type='radio'] {
+    transform: scale(2);
 }

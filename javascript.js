@@ -158,7 +158,7 @@ const questions = [
 
 $(document).ready(function() {
   $('#questionBox').hide()
-
+  $('#x').hide()
   let $play = $('#play')
 
   $play.on('click', function () {
@@ -201,16 +201,22 @@ $(document).ready(function() {
 
     $('button[type=submit]').click(function () {
       if (answer === questions[count].correct) {
-        $('button[type=submit]').off("click");
+        console.log(answer, questions[count].correct);
         incrementScore()
+        $('button[type=submit]').off("click");
       } else if (answer !== questions[count].correct) {
-        alert('You suck!')
+        $('#x').show();
+        setTimeout(hideEx, 1500);
       }
+      console.log(score)
     });
   }
     $('button[type=next]').click(function() {
       count++
       question();
-
     });
 })
+
+function hideEx () {
+  $('#x').hide();
+}
